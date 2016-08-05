@@ -1,0 +1,19 @@
+<mvc:View
+	controllerName="wb.cosmos.dealapp.controller.SearchDeal"
+	height="100%"
+	width ="100%"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page title="{i18n>searchDealTitle}" class="sapUiResponsiveContentPadding">
+		<mvc:XMLView viewName="wb.cosmos.dealapp.view.SearchDeal.GeneralSelection"/> 
+		<mvc:XMLView viewName="wb.cosmos.dealapp.view.SearchDeal.DealSelection"/> 
+		<footer>
+			<Bar>
+				<contentRight>
+					<Button id="Execute" type="Accept" text="Execute" press="onExecute" />
+					<Button id="Reset"  text="Reset" type="Reject" press="handleSavePress" />
+				</contentRight>
+			</Bar>
+		</footer>
+	</Page>
+</mvc:View>

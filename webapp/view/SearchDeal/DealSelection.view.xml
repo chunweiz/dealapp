@@ -1,0 +1,84 @@
+<mvc:View
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"   >
+
+	<Panel>
+		<headerToolbar>
+			<Toolbar height="2rem">
+				<Title text="Deal Selection"/>
+			</Toolbar>
+		</headerToolbar>
+		<content>
+			<l:Grid>
+				<l:content>
+					<CheckBox text ="{i18n>dealWhereDealEndDate}"/>
+					<DatePicker dateValue=""/>
+					
+					<CheckBox text ="{i18n>licenseActiveinQuarter}">
+						<layoutData>
+							<l:GridData
+								linebreakL="true"
+								linebreakM="true"
+								linebreakS="true"	
+							 />
+						</layoutData>
+					</CheckBox>
+					<ComboBox
+						items="{
+							path: '/ProductCollection',
+							sorter: { path: 'Name' }
+						}">
+						<core:Item key="{ProductId}" text="{Name}" />
+					</ComboBox>
+					<ComboBox
+						items="{
+							path: '/ProductCollection',
+							sorter: { path: 'Name' }
+						}">
+						<core:Item key="{ProductId}" text="{Name}" />
+					</ComboBox>
+					<CheckBox text ="{i18n>dealLastChanged}">
+						<layoutData>
+							<l:GridData
+								linebreakL="true"
+								linebreakM="true"
+								linebreakS="true"	
+							 />
+						</layoutData>
+					</CheckBox>
+					<DatePicker dateValue=""/>
+					<CheckBox text ="{i18n>dealCreatedOn}">
+						<layoutData>
+							<l:GridData
+								linebreakL="true"
+								linebreakM="true"
+								linebreakS="true"	
+							 />
+						</layoutData>
+					</CheckBox>
+					<DatePicker dateValue=""/>
+					<CheckBox text ="{i18n>revRegDate}">
+						<layoutData>
+							<l:GridData
+								linebreakL="true"
+								linebreakM="true"
+								linebreakS="true"	
+							 />
+						</layoutData>
+					</CheckBox>
+					<DateRangeSelection
+						id="DRS2"
+						dateValue="{path:'/dateValueDRS2'}"
+						secondDateValue="{path:'/secondDateValueDRS2'}"
+						minDate="{path:'/dateMinDRS2'}"
+						maxDate="{path:'/dateMaxDRS2'}"
+						change="handleChange"
+					/>
+					<CheckBox text ="{i18n>tbaStatus}"/>
+				</l:content>	
+			</l:Grid>
+		</content>
+	</Panel>
+</mvc:View>
