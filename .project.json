@@ -10,7 +10,6 @@
     "account": "s0010142975trial",
     "name": "wbdealapp",
     "lastVersionWeTriedToDeploy": "cwtest11"
-
   },
   "deploy": {
     "destination": "GWD",

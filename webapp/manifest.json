@@ -79,7 +79,7 @@
 			],
 			"targets": {
 				"home": {
-					"viewName": "/SearchDeal/SearchDeal",
+					"viewName": "SearchDeal/SearchDeal",
 					"viewLevel": 1
 				},
 				"notFound": {
@@ -87,7 +87,7 @@
 					"transition": "show"
 				},
 				"dealMD": {
-					"viewName": "/DealMasterDetail/DealMasterDetail",
+					"viewName": "DealMasterDetail/DealMasterDetail",
 					"viewLevel": 1
 				}
 			}

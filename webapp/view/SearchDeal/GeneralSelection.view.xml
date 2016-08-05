@@ -27,7 +27,11 @@
 						<f:formElements>
 							<f:FormElement label="{i18n>salesOffice}">
 								<f:fields>
-									<Input value="" id=""/>
+									<MultiComboBox selectionChange="handleSelectionChange" selectionFinish="handleSelectionFinish" width="500px">
+										
+								
+									
+									</MultiComboBox>
 								</f:fields>
 							</f:FormElement>
 							<f:FormElement label="{i18n>ip}">
