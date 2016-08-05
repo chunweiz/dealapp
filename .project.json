@@ -8,8 +8,9 @@
   },
   "hcpdeploy": {
     "account": "s0010142975trial",
-    "name": "dealappui5",
-    "lastVersionWeTriedToDeploy": "1.0.4"
+    "name": "wbdealapp",
+    "lastVersionWeTriedToDeploy": "cwtest11"
+
   },
   "deploy": {
     "destination": "GWD",
