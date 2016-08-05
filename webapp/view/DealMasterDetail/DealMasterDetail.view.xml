@@ -1,0 +1,64 @@
+<mvc:View
+	xmlns:mvc="sap.ui.core.mvc"
+	id = "SplitView"
+	controllerName="wb.cosmos.dealapp.controller.DealMasterDetail"
+	xmlns="sap.m" >
+	<SplitContainer id="WBDealAppSplitCont" initialDetail="detail" initialMaster="master">
+		<detailPages>
+			<Page id="detail" title="Detail 1" class="sapUiStdPage">
+				<headerContent>
+					<Button id="fullScreenBtn" icon="sap-icon://full-screen" press="onToggleFullScreen"/>
+				</headerContent>
+				<content>
+					<Label text="Deal XXXX" />
+						<IconTabBar
+							id="idIconTabBarNoIcons"
+							class="sapUiResponsiveContentPadding">
+							<items>
+								<IconTabFilter
+									text="License Fee">
+									<Text text="Info content goes here ..." />
+								</IconTabFilter>
+								<IconTabFilter
+									text="Rights Attribute">
+									<Text text="Attachments go here ..." />
+								</IconTabFilter>
+								<IconTabFilter
+									text="Rights Dimension">
+									<Text text="Notes go here ..." />
+								</IconTabFilter>
+							</items>
+						</IconTabBar>
+				</content>
+				
+				<footer>
+					<Bar>
+						<contentRight>
+							<Button id="Execute" type="Accept" text="Execute" press="onExecute" />
+							<Button id="Reset"  text="Reset" type="Reject" press="handleSavePress" />
+						</contentRight>
+					</Bar>
+				</footer>
+			</Page>
+		</detailPages>
+		<masterPages>
+			<Page id="master" title="Search Results" icon="sap-icon://action" class="sapUiStdPage" showNavButton="true"
+				  navButtonPress="onPressMasterBack">
+				<subHeader>
+					<Toolbar>
+						<SearchField />
+					</Toolbar>
+				</subHeader>
+				<content>
+					<List itemPress="onListItemPress">
+						<items>
+							<StandardListItem title="Deal XXXXXX" type="Active" />
+							<StandardListItem title="Deal YYYYYY" type="Active" />
+							<StandardListItem title="Deal YYYYYY" type="Active" />
+						</items>
+					</List>
+				</content>
+			</Page>
+		</masterPages>
+	</SplitContainer>
+</mvc:View>
