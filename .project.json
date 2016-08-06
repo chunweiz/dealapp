@@ -1,0 +1,22 @@
+{
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "",
+    "defaultLanguage": "",
+    "defaultI18NPropertyFile": "",
+    "resourceModelName": ""
+  },
+  "hcpdeploy": {
+    "account": "s0010142975trial",
+    "name": "wbdealapp",
+    "lastVersionWeTriedToDeploy": "cwtest11"
+  },
+  "build": {
+    "targetFolder": "buildResults",
+    "sourceFolder": "webapp"
+  },
+  "deploy": {
+    "destination": "GWD",
+    "name": "ZDEALAPP2"
+  }
+}

@@ -1,0 +1,153 @@
+<mvc:View
+	xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Panel>
+		<headerToolbar>
+			<Toolbar height="2rem">
+				<Title text="General Selection"/>
+			</Toolbar>
+		</headerToolbar>
+		<content>
+			<f:Form id="FormChange354"
+				minWidth="1024"
+				maxContainerCols="2"
+				editable="true">
+				<f:layout>
+					<f:ResponsiveGridLayout
+						labelSpanL="3"
+						labelSpanM="3"
+						emptySpanL="1"
+						emptySpanM="1"
+						columnsL="2"
+						columnsM="1" />
+				</f:layout>
+				<f:formContainers>
+					<f:FormContainer>
+						<f:formElements>
+							<f:FormElement label="{i18n>salesOffice}">
+								<f:fields>
+									<MultiComboBox selectionChange="handleSelectionChange" selectionFinish="handleSelectionFinish" width="500px">
+										
+								
+									
+									</MultiComboBox>
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="{i18n>ip}">
+								<f:fields>
+									<Input value="" />
+			
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="{i18n>reportingMedia}">
+								<f:fields>
+									<Input value=""/>
+							
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="{i18n>reportingTerr}">
+								<f:fields>
+									<Input value=""/>
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="{i18n>dealID}">
+								<f:fields>
+									<Input value=""/>
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="{i18n>dealStatus}">
+								<f:fields>
+									<Input value=""/>
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="{i18n>changeOrderID}">
+								<f:fields>
+									<Input value="" />
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="{i18n>changeOrderStatus}">
+								<f:fields>
+									<Input value=""/>
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="{i18n>licensee}">
+								<f:fields>
+									<Input value=""/>
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="{i18n>royaltiesScopeStatus}">
+								<f:fields>
+									<Input value=""/>
+								</f:fields>
+							</f:FormElement>
+								<f:FormElement label="{i18n>employeeResponsible}">
+								<f:fields>
+									<Input value="" />
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="{i18n>salesExecutive}">
+								<f:fields>
+									<Input value="" />
+			
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="{i18n>contactAdminAssigned}">
+								<f:fields>
+									<Input value=""/>
+							
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="{i18n>contractManagerAssigned}">
+								<f:fields>
+									<Input value=""/>
+								</f:fields>
+							</f:FormElement>
+						</f:formElements>
+					</f:FormContainer>
+					<f:FormContainer>
+						<f:formElements>
+							<f:FormElement label="{i18n>companyCode}">
+								<f:fields>
+									<Input value=""/>
+								</f:fields>
+							</f:FormElement>
+								<f:FormElement label="{i18n>distributionChannel}">
+								<f:fields>
+									<Input value="" />
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="{i18n>division}">
+								<f:fields>
+									<Input value="" />
+			
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="{i18n>targetCurrency}">
+								<f:fields>
+									<Input value=""/>
+							
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="{i18n>transactionTyp}">
+								<f:fields>
+									<Input value=""/>
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="{i18n>billingReview}">
+								<f:fields>
+									<Input value=""/>
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement label="{i18n>revenueReview}">
+								<f:fields>
+									<Input value="" />
+								</f:fields>
+							</f:FormElement>
+						</f:formElements>
+					</f:FormContainer>				
+				</f:formContainers>
+			</f:Form>
+		</content>
+	</Panel>
+</mvc:View>
