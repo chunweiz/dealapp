@@ -1,7 +1,9 @@
 <mvc:View
 	xmlns="sap.m"
 	xmlns:f="sap.ui.layout.form"
-	xmlns:mvc="sap.ui.core.mvc">
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	controllerName="wb.cosmos.dealapp.controller.GeneralSelection">
 	<Panel>
 		<headerToolbar>
 			<Toolbar height="2rem">
@@ -27,10 +29,9 @@
 						<f:formElements>
 							<f:FormElement label="{i18n>salesOffice}">
 								<f:fields>
-									<MultiComboBox selectionChange="handleSelectionChange" selectionFinish="handleSelectionFinish" width="500px">
-										
-								
-									
+									<MultiComboBox selectionChange="handleSelectionChange" selectionFinish="handleSelectionFinish" width="500px"
+										items="{ path: '/DATA', sorter: { path: 'FIELD1' } }">
+										<core:Item key="{FIELD1}" text="{FIELD1} | {FIELD2}"/>
 									</MultiComboBox>
 								</f:fields>
 							</f:FormElement>

@@ -19,9 +19,7 @@
 			"tablet": true,
 			"phone": false
 		},
-		"supportedThemes": [
-			"sap_bluecrystal"
-		]
+		"supportedThemes": ["sap_bluecrystal"]
 	},
 	"sap.ui5": {
 		"_version": "1.1.0",
@@ -33,7 +31,8 @@
 			}
 		},
 		"config": {
-			"invoiceLocal": "/Invoices.json"
+			"searchHelpLocal": "localService/searchHelp.json",
+		    "searchHelpRemote": "/sap/bc/zxsjs_proxy?cmd=getDivDistCC"
 		},
 		"models": {
 			"i18n": {
@@ -59,24 +58,17 @@
 					"target": "notFound"
 				}
 			},
-			"routes": [
-				{
-					"name": "dealMD",
-					"pattern": "dealMD",
-					"greedy": false,
-					"target": [
-						"dealMD"
-					]
-				},
-				{
-					"name": "searchDeal",
-					"pattern": "",
-					"greedy": false,
-					"target": [
-						"home"
-					]
-				}
-			],
+			"routes": [{
+				"name": "dealMD",
+				"pattern": "dealMD",
+				"greedy": false,
+				"target": ["dealMD"]
+			}, {
+				"name": "notFound",
+				"pattern": "",
+				"greedy": false,
+				"target": ["home"]
+			}],
 			"targets": {
 				"home": {
 					"viewName": "SearchDeal/SearchDeal",
