@@ -9,7 +9,19 @@
   "hcpdeploy": {
     "account": "s0010142975trial",
     "name": "wbdealapp",
-    "lastVersionWeTriedToDeploy": "cwtest11"
+    "lastVersionWeTriedToDeploy": "2.12"
+  },
+  "build": {
+    "targetFolder": "dist",
+    "sourceFolder": "webapp",
+    "excludedFolders": [
+      "test"
+    ],
+    "excludedFiles": [
+      "test.html"
+    ],
+    "buildRequired": false,
+    "lastBuildDateTime": "Sat, 06 Aug 2016 09:32:34 GMT"
   },
   "deploy": {
     "destination": "GWD",
