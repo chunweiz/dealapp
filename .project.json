@@ -9,7 +9,7 @@
   "hcpdeploy": {
     "account": "s0010142975trial",
     "name": "wbdealapp",
-    "lastVersionWeTriedToDeploy": "2.12"
+    "lastVersionWeTriedToDeploy": "2.13"
   },
   "build": {
     "targetFolder": "dist",
@@ -21,10 +21,29 @@
       "test.html"
     ],
     "buildRequired": false,
-    "lastBuildDateTime": "Sat, 06 Aug 2016 09:32:34 GMT"
+    "lastBuildDateTime": "Thu, 18 Aug 2016 22:06:48 GMT"
   },
   "deploy": {
     "destination": "GWD",
     "name": "ZDEALAPP2"
+  },
+  "projectType": [
+    "sap.watt.uitools.ide.fiori",
+    "sap.watt.uitools.ide.web",
+    "com.watt.common.builder.sapui5clientbuild"
+  ],
+  "performancetoolkit.runner": {
+    "e2eDuration": {
+      "error": 3750,
+      "warning": 2750
+    },
+    "roundTrips": {
+      "error": 4,
+      "warning": 2
+    },
+    "backendRequests": {
+      "error": 4,
+      "warning": 2
+    }
   }
 }

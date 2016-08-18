@@ -20,7 +20,11 @@
         "id": 522302,
         "runnerId": "webapprunner",
         "displayName": "Run index.html",
+<<<<<<< Upstream, based on 77fb54d24e58552f6c23b78fd487f662e21fd051
         "lastRunTimeStamp": 1470822846137
+=======
+        "lastRunTimeStamp": 1470929393408
+>>>>>>> 464b787 commit with drop down populated
       }
     }
   ]

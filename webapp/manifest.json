@@ -32,7 +32,11 @@
 		},
 		"config": {
 			"searchHelpLocal": "localService/searchHelp.json",
+<<<<<<< Upstream, based on 77fb54d24e58552f6c23b78fd487f662e21fd051
 		    "searchHelpRemote": "/sap/bc/zxsjs_proxy?cmd=getDivDistCC"
+=======
+			"searchHelpRemote": "/sap/bc/zxsjs_proxy?cmd=getDivDistCC"
+>>>>>>> 464b787 commit with drop down populated
 		},
 		"models": {
 			"i18n": {
@@ -58,6 +62,7 @@
 					"target": "notFound"
 				}
 			},
+<<<<<<< Upstream, based on 77fb54d24e58552f6c23b78fd487f662e21fd051
 			"routes": [{
 				"name": "dealMD",
 				"pattern": "dealMD",
@@ -69,6 +74,26 @@
 				"greedy": false,
 				"target": ["home"]
 			}],
+=======
+			"routes": [
+				{
+					"name": "dealMD",
+					"pattern": "dealMD",
+					"greedy": false,
+					"target": [
+						"dealMD"
+					]
+				},
+				{
+					"name": "notFound",
+					"pattern": "",
+					"greedy": false,
+					"target": [
+						"home"
+					]
+				}
+			],
+>>>>>>> 464b787 commit with drop down populated
 			"targets": {
 				"home": {
 					"viewName": "SearchDeal/SearchDeal",
